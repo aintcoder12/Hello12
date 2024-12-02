@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+}
+
+body {
+    
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #121212; /* Dark background for a sleek, modern feel */
+    color: #FFC107; /* Amber yellow text for contrast */
+}
+
+/* Styling for the element with id rs */
+#rs {
+    position: relative;
+    font-family: 'Harlow Solid', cursive; /* Fallback to sans-serif if the custom font fails */
+    font-size: 65px;
+    font-style: italic;
+    color: #FFC107; /* Amber yellow text */  
+}
+
+#lineback {
+    background-image: url('Picture/line.jpeg'); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the background fills the container */
+    width: 100%; /* Ensures full width */
+    height: 240px; /* Makes the container take the full height of the viewport */
+    }
+.container {
+    position: relative;
+    max-width: 1000px; /* Maximum width for main content */
+    margin: 0 auto; /* Center the main content */
+    display: flex; /* Create a flex container */
+    align-items: center; /* Vertically center the content */
+}
+
+.about-me {
+    position: relative;
+    flex: 1; /* Allow the "About Me" section to take available space */
+    color: #FFC107; /* Amber yellow text */
+    margin-top: 90px;
+}
+
+/* Style for Explore button */
+.explore-btn {  
+    margin-left: 370px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 0px; /* Adds space above the button */
+    background-color: rgb(238, 166, 11); /* Golden color for the button */
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Explore button */
+.explore-btn:hover {
+    background-color:  rgb(70, 68, 67); /* Darker golden color on hover */
+}
+
+/* Optional: Add focus styles for better accessibility */
+.explore-btn:focus {
+    outline: 2px solid rgb(238, 166, 11);
+    outline-offset: 4px;
+}
+
+
+/*logo with link*/
+/* Style the logos container to align logos inline */
+.social-logos {
+    display: flex;
+    justify-content: flex-start; /* Align logos to the left */
+    gap: 15px; /* Space between logos */
+    margin-top: 20px; /* Space between the text and logos */
+}
+
+/* Style for the individual logo images */
+.logo {
+    display: inline;
+    width: 25px; /* Adjust the size of the logos */
+    height: auto; /* Keep the aspect ratio */
+    cursor: pointer; /* Ensure the logos are clickable */
+}
+
+.aboutme  {
+    color: #FFC107;
+    margin-top: -40px; /* Use negative margin to bring it closer to the top */
+    padding-top: 0; /* Optional: remove padding if there is any */
+    margin-bottom: 10px; /* Optional: space between the About Me heading and the paragraph */
+}
+.mem {
+    width: 100%;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between the paragraph and the video */
+    gap: 20px; /* Optional: Adds space between paragraph and video */
+}
+
+.meme {
+    margin-top: -50px;
+    flex: 1; /* Makes the paragraph take up available space */
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 60%; /* You can adjust this to control the paragraph width */
+}
+
+.memevid {
+    flex: 0; /* Video takes up its natural width */
+    width: 30%; /* Resize video to 50% of its container */
+    height: 50%; /* Ensures the video height matches the paragraph */
+    object-fit: cover; /* Ensures the video fills the container without distorting */
+}
+
+.Me {
+    position: relative;
+    border-radius: 40px;
+    width: 320px; /* Resize the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #FFC107; /* Amber yellow border around the image */
+}
+.mepara {
+    text-align: justify;
+    max-width: 600px; /* Maximum width for main content */
+}
+/*nav bar*/
+/* Navigation bar styling */
+nav {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the items */
+}
+
+nav a {
+    color: #FFC107; /* Amber yellow text */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 1.em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #FFC107; /* Amber background */
+    color: #333; /* Dark text when hovered */
+    border-radius: 5px;
+}
+
+/* Header */
+.jose {
+    float: left;
+    width: 150px; /* Adjust size of the image */
+    height: auto; /* Adjust height according to the width */
+}
+
+header {
+    position: relative;
+    background-color: #1a1a1a; /* Dark background for header */
+    color: #FFC107; /* Amber yellow text */
+    text-align: center; /* Centered text */
+    padding: 1em 0; /* Padding for spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+
+}
+
+#center {
+    margin-right: 150px;    
+}
+.moving-text {
+    animation: move 5s linear infinite; /* Animation for the welcome text */
+    font-size: 1.5em; /* Larger font size for emphasis */
+    color: #FFC107; /* Amber yellow */
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+/*MAIN*/
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding-top: 300px;
+    z-index: 1; /* Ensures content is below the header */
+    position: relative;
+}
+.skill-image {
+    width: 190px;
+    height: 180px;
+    margin-bottom: 10px; /* Space between the image and text */
+}
+/* Container for all the skill cards */
+.skills-container {
+    color: #121212;
+    display: flex;
+    width: 120%;
+    gap: 8px; /* Space between skill cards */
+    flex-wrap: wrap; /* Allows wrapping of items when the screen is smaller */
+    padding: 5px; /* Optional padding to ensure space around the cards */
+}
+
+/* Style for each skill card */
+.skill {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px; /* 3D effect */
+    background-color: rgb(238, 166, 11); /* Yellow background */
+    border-radius: 10px; /* Optional: rounded corners for the skill card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    overflow: hidden; /* Prevents content from overflowing the card */
+}
+
+/* Inner structure for flip effect */
+.skill-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* Allow flipping of elements */
+    transition: transform 0.6s; /* Smooth flip transition */
+}
+
+.skill:hover .skill-inner {
+    transform: rotateY(180deg); /* Flip when hovered */
+}
+
+/* Front side of the card */
+.skill-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back during the flip */
+    display: flex;
+    flex-direction: column; /* Align image and text vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center;
+}
+
+/* Back side of the card (description) */
+.skill-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg); /* Initially hidden, rotates to be shown */
+    backface-visibility: hidden; /* Hide the front during the flip */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Optional: Style the skill name text */
+.skill-front h2 {
+    font-size: 16px;
+    margin-top: 10px; /* Space between the image and text */
+}
+
+/* Optional: Style the description text */
+.skill-back p {
+    font-size: 14px;
+}
+
+/*PROGESS BAR*/
+/* Each progress bar container */
+.progress-wrapper {
+    height: 170px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    border: 1px solid #0f0f0f; /* Thin border for each progress bar container */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #080808; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for more depth */
+}
+
+.progress-bar-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
+    grid-gap: 10px;                        /* Spacing between grid items */
+    width: 100%;                             /* Full width of parent */
+    max-width: 800px;                       /* Max width for responsiveness */
+    padding: 20px;
+    border: 1px solid #FFC107;                 /* Thin border */
+    border-radius: 10px;
+    background-color: #222222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    height: 17px;
+    border-radius: 25px;
+    transition: width 1s ease-in-out;
+    text-align: center;
+    color: rgb(49, 48, 48);
+    font-weight: bold;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+.progress-description {
+    text-align: center;
+    margin-top: 10px;
+    color: #f0ecec;
+}
+
+.amber {
+    background-color: #ffb300; /* Amber */
+}
+
+.yellow {
+    background-color: #ffeb3b; /* Yellow */
+}
+
+.description-text {
+    
+    text-align: justify;
+    font-size: 14px;
+    color: #f1ecec;
+    margin-top: 5px;
+}
+/*PROGESS BAR*/
+
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.album-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.album-container img:hover {
+    opacity: 0.8;
+}
+
+/* Styling for the photo-gallery container */
+
+.contact-section {
+    height: 500px;
+    max-width: 700px; /* Updated max width */
+    margin: auto; /* Center the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5); /* Shadow effect */
+    padding: 40px; /* Increased padding */
+}
+.w3-button {
+    background-color: #FFC107; /* Amber yellow button */
+    color: black; /* Black text color for button */
+}
+.w3-button:hover {
+    background-color: #FFA000; /* Darker amber on hover */
+}
+
+footer {
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding for spacing */
+    background-color: #1a1a1a; /* Darker background */
+    color: #FFC107; /* Amber yellow text */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
